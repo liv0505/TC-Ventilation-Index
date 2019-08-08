@@ -10,13 +10,28 @@
 **3.get_figure.py** is a python script that plot chosen variables from \*.atmos.nc like nc file, and save the figures.
 
 ## Quick Start:
+Before start, you should put your data files, pcmin.f90, PI.py, get_figure.py in the same folder.<br>
 **Step 1. Compile FORTRAN 90 file:**<br>
 Enter the following code into your terminal:<br>
 >`f2py -c pcmin.f90 -m tcpi`<br>
 
 And you will get a `tcpi*.so file`, (e.g. `tcpi.cpython-37m-darwin.so`), which could be called in python.<br>
 
-**Step 2. **
+**Step 2. Run PI.py:**<br>
+First, modify the filenames in PI.py, i.e. `fname_1`, `fname_2` and `outfile` in main().<br>
+Enter the following code into your terminal:<br>
+>`python /...(rootpath).../PI.py`<br>
+
+And wait...Hopefully you will get a new `.nc` file soon includes potential intensity in wind speed form!! Yeah~<br>
+
+**Step 3. Plot your result:**<br>
+You may wanna plot your results as well.<br>
+First, modify the filename in get_figure.py, i.e.`fname` in main().<br>
+Enter the following code into your terminal:<br>
+>`python /...(rootpath).../get_figure.py`<br>
+
+That's it. Good Luck!
+
 
 
         
