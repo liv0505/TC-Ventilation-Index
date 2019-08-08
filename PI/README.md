@@ -12,7 +12,7 @@
 ## Quick Start:
 **Step 1. Compile FORTRAN 90 file:**<br>
 Enter the following code into your terminal:<br>
->>>`f2py -c pcmin.f90 -m tcpi`<br>
+>`f2py -c pcmin.f90 -m tcpi`<br>
 
 And you will get a `tcpi*.so file`, (e.g. `tcpi.cpython-37m-darwin.so`), which could be called in python.<br>
 
