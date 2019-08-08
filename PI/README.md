@@ -23,6 +23,7 @@ Enter the following code into your terminal:<br>
 >`python /...(rootpath).../PI.py`<br>
 
 And wait...Hopefully you will get a new `.nc` file soon includes potential intensity in wind speed form!! Yeah~<br>
+My sample result is `PI_monthly_06_to_11_2018.nc`<br>
 
 **Step 3. Plot your result:**<br>
 You may wanna plot your results as well.<br>
