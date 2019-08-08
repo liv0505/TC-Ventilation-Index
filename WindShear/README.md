@@ -1,6 +1,6 @@
 # Let's calculate wind shear between 200hPa and 850hPa
 
-Calculating wind shear is quite easy though...here we go<br>
+Calculating wind shear is quite easy though...but it worth looking at when you are interested in TC formation. Here we go!<br>
 
 ## Formula:<br>
 Vshear = ( (u200-u850)\*\*2 + (v200-v850)\*\*2 )\*\*(1/2)
