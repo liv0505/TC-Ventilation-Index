@@ -1,7 +1,7 @@
 # Let's calculate Potential Intensity!
 
 ## File descriptions:
- 1. **pcmin.f90** is a collection of five subroutines.
+1. **pcmin.f90** is a collection of five subroutines.
 *The first four subroutines (pcmin3, pcmin3_kflag, pcmin2 and pcmin) could all be used to calculate the potential intensity (the maxium wind speed and the minimum central pressure) of a tropical cyclone. The detailed description of PI could be found [here](https://emanuel.mit.edu/limits-hurricane-intensity). 
 *The fifth subroutine is CAPE, which would be called by all other subroutines in this f90 file.
 
