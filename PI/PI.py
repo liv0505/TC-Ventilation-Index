@@ -3,7 +3,9 @@ import numpy as np, xarray as xr
 
 def get_pi(fname_sl, fname_pl, ofile=True, reverse_p=True):
     '''
-    Calculate Potential Intensity on EAR5 reanalysis data by calling pcmin.f90 fortran subroutine.
+    Calculate Potential Intensity on EAR5 reanalysis data by calling pcmin.f90 fortran subroutine;
+    Save the result in form of Xarray.Dataset to an nc file.
+    
     Link:
 
     Input:
@@ -11,7 +13,6 @@ def get_pi(fname_sl, fname_pl, ofile=True, reverse_p=True):
     2. fname_pl: ERA5 data on pressure levels of Temperature(K) and Specific Humidity(kg kg**-1).
     3. ofile = whether or not save the result as .nc file.
     4. ofigure = whether or not show and save the figures.
-    5. reverse_p:
     '''
     ds_1 = xr.open_dataset(fname_sl)
     ds_2 = xr.open_dataset(fname_pl)
@@ -47,7 +48,7 @@ def get_pi(fname_sl, fname_pl, ofile=True, reverse_p=True):
                    coords=(ds_2.time, ds_2.latitude.values, ds_2.longitude.values),
                    attrs=dict(long_name='Potential Intensity', units='m/s')
                    )
-    # wrap into an xarray.open_dataset
+    # wrap into an xarray.Dataset
     ds = xr.Dataset(dict(vpi = vpi),
                     attrs={'vpi':'The surface wind speed upper limit for hurricanes'})
 
