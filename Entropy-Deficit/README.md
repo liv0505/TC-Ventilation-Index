@@ -1,6 +1,6 @@
 # Let's Calculate Entropy Deficit!
 ## Reference: 
-[Tang and Emanuel (2012)](https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-11-00165.1), Eq.(2)
+[Tang and Emanuel (2012)](https://journals.ametsoc.org/doi/full/10.1175/BAMS-D-11-00165.1), Eq.(2)&(3)
 
 ## Data Sources:
 **Time:** Jun to Nov, 2018
